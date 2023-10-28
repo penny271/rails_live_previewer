@@ -1,0 +1,30 @@
+<div class="mb-8">
+  <h1 class="text-4xl mb-10 text-center">Live previewer</h1>
+</div>
+
+<div class="live_container">
+  <div class="live_editor">
+    <h3>HTML:</h3>
+    <textarea id="live_htmlInput"><p>Hello world!!</p></textarea>
+
+    <h3>CSS:</h3>
+    <textarea id="live_cssInput">p {
+font-family: Georgia, serif;
+font-size: 48px;
+color: red;
+}</textarea>
+
+    <%# <button id="updatePreview">Update Preview</button> %>
+    <button id="live_updatePreview"
+  type="button"
+  class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+      更新
+    </button>
+  </div>
+
+  <%# ここに結果が表示される %>
+  <div class="live_preview">
+    <h3>表示結果:</h3>
+    <iframe id="live_previewFrame"></iframe>
+  </div>
+</div>
